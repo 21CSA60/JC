@@ -315,86 +315,8 @@ export const jobs = [
   }
 ];
 
-export const applications = [
-  {
-    id: "app1",
-    jobId: "job1",
-    candidateId: "cand1",
-    status: "shortlisted",
-    appliedAt: "2024-01-16",
-    coverLetter: "I am interested in the Senior Full Stack Developer position...",
-    resumeUrl: "https://example.com/resumes/john-smith.pdf",
-    answers: [
-      "8 years of experience with React in production environments",
-      "Led a team of 5 developers in building a high-traffic e-commerce platform"
-    ]
-  },
-  {
-    id: "app2",
-    jobId: "job2",
-    candidateId: "cand3",
-    status: "pending",
-    appliedAt: "2024-01-12",
-    coverLetter: "With my background in data science and healthcare analytics...",
-    resumeUrl: "https://example.com/resumes/michael-chen.pdf",
-    answers: [
-      "3 years experience analyzing healthcare datasets",
-      "Proficient in Python, R, and SQL for data analysis"
-    ]
-  },
-  {
-    id: "app3",
-    jobId: "job3",
-    candidateId: "cand2",
-    status: "accepted",
-    appliedAt: "2024-01-21",
-    coverLetter: "As a UX designer with experience in educational products...",
-    resumeUrl: "https://example.com/resumes/sarah-johnson.pdf",
-    answers: [
-      "Designed multiple educational apps used by over 100k students",
-      "User-centered design approach involving extensive research and testing"
-    ]
-  },
-  {
-    id: "app4",
-    jobId: "job4",
-    candidateId: "cand4",
-    status: "pending",
-    appliedAt: "2024-01-19",
-    coverLetter: "With my background in financial technology marketing...",
-    resumeUrl: "https://example.com/resumes/emily-rodriguez.pdf",
-    answers: [
-      "Led digital marketing for a payment processing platform",
-      "Expertise in financial services marketing compliance"
-    ]
-  },
-  {
-    id: "app5",
-    jobId: "job5",
-    candidateId: "cand5",
-    status: "shortlisted",
-    appliedAt: "2024-01-20",
-    coverLetter: "My product management experience in sustainable technology...",
-    resumeUrl: "https://example.com/resumes/david-kim.pdf",
-    answers: [
-      "Managed green energy product launches",
-      "Familiar with solar design principles and software"
-    ]
-  },
-  {
-    id: "app6",
-    jobId: "job6",
-    candidateId: "cand6",
-    status: "rejected",
-    appliedAt: "2024-01-18",
-    coverLetter: "With my infrastructure and cloud expertise...",
-    resumeUrl: "https://example.com/resumes/rachel-thompson.pdf",
-    answers: [
-      "Built scalable e-commerce infrastructure",
-      "Experience with high-traffic retail platforms"
-    ]
-  }
-];
+export const mockJobs = jobs;
+export const mockApplications = applications;
 
 export const shortlistedJobs = [
   { candidateId: "cand1", jobIds: ["job2", "job3"] },
