@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Link, useNavigate, useLocation } from "react-router-dom"
 import { useAuth } from "../contexts/AuthContext"
 import { GraduationCap, Mail, Lock, AlertCircle } from "lucide-react"
+import DemoCredentials from "../components/auth/DemoCredentials"
 
 const Login = () => {
   const [email, setEmail] = useState("")
@@ -163,24 +164,11 @@ const Login = () => {
               </div>
             </div>
 
-            <div className="mt-6 grid grid-cols-1 gap-3">
-              <div className="text-sm text-gray-500 text-center">
-                <p>For demo purposes, use these emails with any password:</p>
-                <ul className="mt-2 space-y-1">
-                  <li>
-                    <code className="bg-gray-100 px-1 py-0.5 rounded">employer@example.com</code> - Employer
-                  </li>
-                  <li>
-                    <code className="bg-gray-100 px-1 py-0.5 rounded">candidate@example.com</code> - Candidate
-                  </li>
-                </ul>
-              </div>
+            <div className="mt-6">
+              <DemoCredentials />
             </div>
           </div>
         </div>
       </div>
     </div>
   )
-}
-
-export default Login
