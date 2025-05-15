@@ -315,6 +315,9 @@ export const jobs = [
   }
 ];
 
+// Define applications array before using it
+export const applications = [];
+
 export const mockJobs = jobs;
 export const mockApplications = applications;
 
