@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --foreground: 0deg 0% 100%;
+    --background: 210deg 10% 20%;
+    --primary: 210deg 100% 50%;
+    --secondary: 210deg 100% 40%;
+    --accent: 210deg 100% 30%;
+    --muted: 210deg 100% 20%;
+    --border: 210deg 100% 10%;
+    --card: hsl(var(--background) / var(--muted));
+    --shadow: hsl(var(--background) / var(--muted));
+    --ring: hsl(var(--background) / var(--muted));
+    --radius: 0.5rem;
+    --transition: all 0.2s ease-in-out;
+    --font-sans: 'Inter', sans-serif;
+    --font-serif: 'Poppins', serif;
+    --font-mono: 'Courier New', monospace;
+  }
+}
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary;
+  }
+}
+@layer utilities {
+  .bg-primary {
+    @apply bg-primary;
+  }
+  .bg-secondary {
+    @apply bg-secondary;
+  }
+  .bg-accent {
+    @apply bg-accent;
+  }
+  .bg-muted {
+    @apply bg-muted;
+  }
+  .bg-border {
+    @apply bg-border;
+  }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
